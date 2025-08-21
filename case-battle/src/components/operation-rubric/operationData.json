@@ -1,0 +1,41 @@
+{
+  "title": "Операции",
+  "titleBg": "/src/assets/image/title-bg.png",
+  "items": [
+    {
+      "title": "Сломанный Клык",
+      "subtitle": "57 предметов",
+      "price": "129 $",
+      "box": "/src/assets/image/box-operation/fang-box.png",
+      "logo": "/src/assets/image/logo-operation/fang-logo.png"
+    },
+    {
+      "title": "Прорыв",
+      "subtitle": "58 предметов",
+      "price": "95 $",
+      "box": "/src/assets/image/box-operation/breakthrough-box.png",
+      "logo": "/src/assets/image/logo-operation/breakthrough-logo.png"
+    },
+    {
+      "title": "Хищные воды",
+      "subtitle": "73 предмета",
+      "price": "119 $",
+      "box": "/src/assets/image/box-operation/predatory-waters-box.png",
+      "logo": "/src/assets/image/logo-operation/predatory-waters-logo.png"
+    },
+    {
+      "title": "Расколотая сеть",
+      "subtitle": "54 предмета",
+      "price": "229 $",
+      "box": "/src/assets/image/box-operation/split-network-box.png",
+      "logo": "/src/assets/image/logo-operation/split-network-logo.png"
+    },
+    {
+      "title": "Бладхаунд",
+      "subtitle": "46 предметов",
+      "price": "399 $",
+      "box": "/src/assets/image/box-operation/bloodhound-box.png",
+      "logo": "/src/assets/image/logo-operation/bloodhound-logo.png"
+    }
+  ]
+}
