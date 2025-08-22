@@ -6,36 +6,136 @@
       "title": "Сломанный Клык",
       "subtitle": "57 предметов",
       "price": "129 $",
-      "box": "/src/assets/image/box-operation/fang-box.png",
-      "logo": "/src/assets/image/logo-operation/fang-logo.png"
+      "box": "/src/assets/image/operation/box/fang-box.png",
+      "logo": "/src/assets/image/operation/logo/fang-logo.png",
+      "caseWrapperTitle": "Содержимое кейса",
+      "caseWrapperCollection": [
+        {
+          "title": "Коллекция «Havoc»",
+          "logo": "/src/assets/image/operation/collection/havoc.png",
+          "quantity": "19 предметов"
+        },
+        {
+          "title": "Коллекция «Controll»",
+          "logo": "/src/assets/image/operation/collection/control.png",
+          "quantity": "19 предметов"
+        },
+        {
+          "title": "Коллекция «Ancient»",
+          "logo": "/src/assets/image/operation/collection/ancient.png",
+          "quantity": "19 предметов"
+        }
+      ]
     },
     {
       "title": "Прорыв",
       "subtitle": "58 предметов",
       "price": "95 $",
-      "box": "/src/assets/image/box-operation/breakthrough-box.png",
-      "logo": "/src/assets/image/logo-operation/breakthrough-logo.png"
+      "box": "/src/assets/image/operation/box/breakthrough-box.png",
+      "logo": "/src/assets/image/operation/logo/breakthrough-logo.png",
+      "caseWrapperTitle": "Содержимое кейса",
+      "caseWrapperCollection": [
+        {
+          "title": "Коллекция «Baggage»",
+          "logo": "/src/assets/image/operation/collection/baggage.png",
+          "quantity": "15 предметов"
+        },
+        {
+          "title": "Коллекция «Cobblestone»",
+          "logo": "/src/assets/image/operation/collection/cobblestone.png",
+          "quantity": "15 предметов"
+        },
+        {
+          "title": "Коллекция «Overpass»",
+          "logo": "/src/assets/image/operation/collection/overpass.png",
+          "quantity": "15 предметов"
+        },
+        {
+          "title": "Коллекция «Cashe»",
+          "logo": "/src/assets/image/operation/collection/cashe.png",
+          "quantity": "13 предметов"
+        }
+      ]
     },
     {
       "title": "Хищные воды",
       "subtitle": "73 предмета",
       "price": "119 $",
-      "box": "/src/assets/image/box-operation/predatory-waters-box.png",
-      "logo": "/src/assets/image/logo-operation/predatory-waters-logo.png"
+      "box": "/src/assets/image/operation/box/predatory-waters-box.png",
+      "logo": "/src/assets/image/operation/logo/predatory-waters-logo.png",
+      "caseWrapperTitle": "Содержимое кейса",
+      "caseWrapperCollection": [
+        {
+          "title": "Коллекция «Train 2021»",
+          "logo": "/src/assets/image/operation/collection/train.png",
+          "quantity": "17 предметов"
+        },
+        {
+          "title": "Коллекция «Mirage 2021»",
+          "logo": "/src/assets/image/operation/collection/mirage.png",
+          "quantity": "18 предметов"
+        },
+        {
+          "title": "Коллекция «Dust 2 2021»",
+          "logo": "/src/assets/image/operation/collection/dust.png",
+          "quantity": "19 предметов"
+        },
+        {
+          "title": "Коллекция «Vertigo 2021»",
+          "logo": "/src/assets/image/operation/collection/vertigo.png",
+          "quantity": "19 предметов"
+        }
+      ]
     },
     {
       "title": "Расколотая сеть",
       "subtitle": "54 предмета",
       "price": "229 $",
-      "box": "/src/assets/image/box-operation/split-network-box.png",
-      "logo": "/src/assets/image/logo-operation/split-network-logo.png"
+      "box": "/src/assets/image/operation/box/split-network-box.png",
+      "logo": "/src/assets/image/operation/logo/split-network-logo.png",
+      "caseWrapperTitle": "Содержимое кейса",
+      "caseWrapperCollection": [
+        {
+          "title": "Коллекция «Norse»",
+          "logo": "/src/assets/image/operation/collection/norse.png",
+          "quantity": "18 предметов"
+        },
+        {
+          "title": "Коллекция «Canals»",
+          "logo": "/src/assets/image/operation/collection/canals.png",
+          "quantity": "18 предметов"
+        },
+        {
+          "title": "Коллекция «St. Mars»",
+          "logo": "/src/assets/image/operation/collection/st-mars.png",
+          "quantity": "18 предметов"
+        }
+      ]
     },
     {
       "title": "Бладхаунд",
       "subtitle": "46 предметов",
       "price": "399 $",
-      "box": "/src/assets/image/box-operation/bloodhound-box.png",
-      "logo": "/src/assets/image/logo-operation/bloodhound-logo.png"
+      "box": "/src/assets/image/operation/box/bloodhound-box.png",
+      "logo": "/src/assets/image/operation/logo/bloodhound-logo.png",
+      "caseWrapperTitle": "Содержимое кейса",
+      "caseWrapperCollection": [
+        {
+          "title": "Gods & Monsters",
+          "logo": "/src/assets/image/operation/collection/gods-and-monsters.png",
+          "quantity": "14 предметов"
+        },
+        {
+          "title": "Коллекция «Rising Sun»",
+          "logo": "/src/assets/image/operation/collection/rising-sun.png",
+          "quantity": "16 предметов"
+        },
+        {
+          "title": "Коллекция «Chop Shop»",
+          "logo": "/src/assets/image/operation/collection/chop-shop.png",
+          "quantity": "16 предметов"
+        }
+      ]
     }
   ]
 }
