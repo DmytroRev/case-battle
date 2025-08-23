@@ -13,17 +13,174 @@
         {
           "title": "Коллекция «Havoc»",
           "logo": "/src/assets/image/operation/collection/havoc.png",
-          "quantity": "19 предметов"
+          "quantity": "19 предметов",
+          "collection": "havoc"
         },
         {
           "title": "Коллекция «Controll»",
           "logo": "/src/assets/image/operation/collection/control.png",
-          "quantity": "19 предметов"
+          "quantity": "19 предметов",
+          "collection": "control"
         },
         {
           "title": "Коллекция «Ancient»",
           "logo": "/src/assets/image/operation/collection/ancient.png",
-          "quantity": "19 предметов"
+          "quantity": "19 предметов",
+          "collection": "ancient"
+        }
+      ],
+      "weapons": [
+        {
+          "title": "M249",
+          "skin": "Хищник",
+          "price": "32 $",
+          "collection": "havoc",
+          "rarity": "white",
+          "img": "/src/assets/image/operation/broken-fang/predator.png"
+        },
+        {
+          "title": "Tec-9",
+          "skin": "Мел «Феникса»",
+          "price": "34 $",
+          "collection": "havoc",
+          "rarity": "white",
+          "img": "/src/assets/image/operation/broken-fang/phoenix-chalk.png"
+        },
+        {
+          "title": "Dual Berettas",
+          "skin": "Ограбление",
+          "price": "45 $",
+          "collection": "havoc",
+          "rarity": "white",
+          "img": "/src/assets/image/operation/broken-fang/robbery.png"
+        },
+        {
+          "title": "Sawed-Off",
+          "skin": "Глиняная засада",
+          "price": "35 $",
+          "collection": "havoc",
+          "rarity": "white",
+          "img": "/src/assets/image/operation/broken-fang/clay-ambush.png"
+        },
+        {
+          "title": "ПП-19 «Бизон»",
+          "skin": "Гремучая смерть",
+          "price": "28 $",
+          "collection": "havoc",
+          "rarity": "white",
+          "img": "/src/assets/image/operation/broken-fang/rattlesnake-death.png"
+        },
+        {
+          "title": "Nova",
+          "skin": "Пыльник",
+          "price": "235 $",
+          "collection": "havoc",
+          "rarity": "blue",
+          "img": "/src/assets/image/operation/broken-fang/dust-cover.png"
+        },
+        {
+          "title": "MP7",
+          "skin": "Ограбление хранилища",
+          "price": "216 $",
+          "collection": "havoc",
+          "rarity": "blue",
+          "img": "/src/assets/image/operation/broken-fang/vault-robbery.png"
+        },
+        {
+          "title": "UMP-45",
+          "skin": "Гусиные лапки",
+          "price": "238 $",
+          "collection": "havoc",
+          "rarity": "blue",
+          "img": "/src/assets/image/operation/broken-fang/goose-feet.png"
+        },
+        {
+          "title": "Револьвер R8",
+          "skin": "Маркер «Феникса»",
+          "price": "272 $",
+          "collection": "havoc",
+          "rarity": "blue",
+          "img": "/src/assets/image/operation/broken-fang/phoenix-marker.png"
+        },
+        {
+          "title": "P250",
+          "skin": "Бенгальский тигр",
+          "price": "1 182 $",
+          "collection": "havoc",
+          "rarity": "blue",
+          "img": "/src/assets/image/operation/broken-fang/bengal-tiger.png"
+        },
+        {
+          "title": "Desert Eagle",
+          "skin": "Ночное ограбление",
+          "price": "1 362 $",
+          "collection": "havoc",
+          "rarity": "blue",
+          "img": "/src/assets/image/operation/broken-fang/night-robbery.png"
+        },
+        {
+          "title": "Negev",
+          "skin": "Трафарет «Феникса»",
+          "price": "1 169 $",
+          "collection": "havoc",
+          "rarity": "blue",
+          "img": "/src/assets/image/operation/broken-fang/phoenix-stencil.png"
+        },
+        {
+          "title": "P90",
+          "skin": "Тигриная яма",
+          "price": "3 900 $",
+          "collection": "havoc",
+          "rarity": "blue",
+          "img": "/src/assets/image/operation/broken-fang/tiger-pit.png"
+        },
+        {
+          "title": "SG 553",
+          "skin": "Гипноз",
+          "price": "6 378 $",
+          "collection": "havoc",
+          "rarity": "purple",
+          "img": "/src/assets/image/operation/broken-fang/hypnosis.png"
+        },
+        {
+          "title": "Glock-18",
+          "skin": "Франклин",
+          "price": "6 085 $",
+          "collection": "havoc",
+          "rarity": "purple",
+          "img": "/src/assets/image/operation/broken-fang/franklin.png"
+        },
+        {
+          "title": "Galil AR",
+          "skin": "Негатив «Феникса»",
+          "price": "5 200 $",
+          "collection": "havoc",
+          "rarity": "purple",
+          "img": "/src/assets/image/operation/broken-fang/negative-of-phoenix.png"
+        },
+        {
+          "title": "AWP",
+          "skin": "Шёлковый тигр",
+          "price": "17 000 $",
+          "collection": "havoc",
+          "rarity": "pink",
+          "img": "/src/assets/image/operation/broken-fang/silk-tiger.png"
+        },
+        {
+          "title": "MAC-10",
+          "skin": "Ужи на сковородке",
+          "price": "12 270 $",
+          "collection": "havoc",
+          "rarity": "pink",
+          "img": "/src/assets/image/operation/broken-fang/snakes-on-a-frying-pan.png"
+        },
+        {
+          "title": "AK-47",
+          "skin": "Рентген",
+          "price": "42 097 $",
+          "collection": "havoc",
+          "rarity": "red",
+          "img": "/src/assets/image/operation/broken-fang/x-ray.png"
         }
       ]
     },
