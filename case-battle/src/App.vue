@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import OperationList from './components/operation-rubric/OperationList.vue';
+import OpenCounter from './components/open-counter/OpenCounter.vue';
 
 </script>
 
 <template>
   <div class="app-wrapper">
     <OperationList />
+    <OpenCounter />
   </div>
 </template>
 
