@@ -1,5 +1,5 @@
 <template>
-    <div class="operation-item">
+    <div class="operation-item" @click="goToCase">
         <div class="operation-item__title-block">
             <h3>{{ props.operation.title }}</h3>
             <h4>{{ props.operation.subtitle }}</h4>
@@ -17,7 +17,11 @@
 </template>
 
 <script lang="ts" setup>
+import { useRouter } from 'vue-router';
+
 interface OperationItem {
+    id: number;
+    slug: string;
     title: string;
     subtitle: string;
     price: string;
@@ -28,6 +32,12 @@ interface OperationItem {
 const props = defineProps<{
     operation: OperationItem;
 }>();
+
+const router = useRouter();
+
+const goToCase = () => {
+    router.push({ name: "CasePage", params: { slug: props.operation.slug } });
+}
 </script>
 
 <style scoped lang="scss">

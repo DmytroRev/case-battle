@@ -3,6 +3,8 @@
   "titleBg": "/src/assets/image/title-bg.png",
   "items": [
     {
+      "id": 1,
+      "slug": "broken-fang",
       "title": "Сломанный Клык",
       "subtitle": "57 предметов",
       "price": "129 $",
@@ -185,6 +187,8 @@
       ]
     },
     {
+      "id": 2,
+      "slug": "breakthrough",
       "title": "Прорыв",
       "subtitle": "58 предметов",
       "price": "95 $",
@@ -215,6 +219,8 @@
       ]
     },
     {
+      "id": 3,
+      "slug": "predatory-waters",
       "title": "Хищные воды",
       "subtitle": "73 предмета",
       "price": "119 $",
@@ -245,6 +251,8 @@
       ]
     },
     {
+      "id": 4,
+      "slug": "split-network",
       "title": "Расколотая сеть",
       "subtitle": "54 предмета",
       "price": "229 $",
@@ -270,6 +278,8 @@
       ]
     },
     {
+      "id": 5,
+      "slug": "bloodhound",
       "title": "Бладхаунд",
       "subtitle": "46 предметов",
       "price": "399 $",
