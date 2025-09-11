@@ -195,6 +195,7 @@
       "price": "95 $",
       "box": "/src/assets/image/operation/box/breakthrough-box.png",
       "logo": "/src/assets/image/operation/logo/breakthrough-logo.png",
+      "casePageSubtitle": "кейс Операции",
       "caseWrapperTitle": "Содержимое кейса",
       "caseWrapperCollection": [
         {
@@ -227,6 +228,7 @@
       "price": "119 $",
       "box": "/src/assets/image/operation/box/predatory-waters-box.png",
       "logo": "/src/assets/image/operation/logo/predatory-waters-logo.png",
+      "casePageSubtitle": "кейс Операции",
       "caseWrapperTitle": "Содержимое кейса",
       "caseWrapperCollection": [
         {
@@ -259,6 +261,7 @@
       "price": "229 $",
       "box": "/src/assets/image/operation/box/split-network-box.png",
       "logo": "/src/assets/image/operation/logo/split-network-logo.png",
+      "casePageSubtitle": "кейс Операции",
       "caseWrapperTitle": "Содержимое кейса",
       "caseWrapperCollection": [
         {
@@ -286,6 +289,7 @@
       "price": "399 $",
       "box": "/src/assets/image/operation/box/bloodhound-box.png",
       "logo": "/src/assets/image/operation/logo/bloodhound-logo.png",
+      "casePageSubtitle": "кейс Операции",
       "caseWrapperTitle": "Содержимое кейса",
       "caseWrapperCollection": [
         {

@@ -1,6 +1,7 @@
 <template>
     <div class="case-page">
-        <PageTitle :casePageSubtitle="caseData?.casePageSubtitle" :title="caseData?.title" />
+        <PageTitle :case-page-subtitle="caseData?.casePageSubtitle" :title="caseData?.title" />
+        <CasePreview :case-preview-box="caseData?.box" :case-preview-logo="caseData?.logo" />
         <div v-if="false">
             <h1>{{ caseData?.title }}</h1>
             <div class="case-roller">
@@ -30,6 +31,7 @@ import { ref } from "vue";
 import { useRoute } from "vue-router";
 import operationData from "../operation-rubric/operationData.json";
 import PageTitle from "./PageTitle.vue";
+import CasePreview from "./CasePreview.vue";
 
 const route = useRoute();
 const slug = route.params.slug as string;
