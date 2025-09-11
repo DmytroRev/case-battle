@@ -18,24 +18,24 @@ import { getItem, setItem, removeItem } from '../../module/useLocalStorage';
 const props = defineProps<{
     casePageSubtitle?: string;
     title?: string;
-
+    slug?: string;
 }>();
 
-const STORAGE_KEY = "liked";
+const getStorageKey = () => `case-page-liked-${props.slug}`;
+
 const isLiked = ref(false);
 
 onMounted(() => {
-    isLiked.value = getItem(STORAGE_KEY, false);
+    isLiked.value = getItem(getStorageKey(), false);
 });
 
 watch(isLiked, (newVal) => {
     if (newVal) {
-        setItem(STORAGE_KEY, true);
+        setItem(getStorageKey(), true);
     } else {
-        removeItem(STORAGE_KEY);
+        removeItem(getStorageKey());
     }
 });
-
 function toggleLike() {
     isLiked.value = !isLiked.value;
 }
