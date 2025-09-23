@@ -14,14 +14,17 @@
         </div>
         <div class="open-counter__footer">
             <button class="open-counter__btn"><img class="open-counter__icon" src="../../assets/image/box.png"
-                    alt="box">Открыть за {{ 32 }} $</button>
+                    alt="box">Открыть за {{ props.price }} $</button>
             <button class="open-counter__btn"><img class="open-counter__icon" src="../../assets/image/lightning.png"
-                    alt="lightning">Быстро за {{ 21 }} $</button>
+                    alt="lightning">Быстро за {{ props.price }} $</button>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
+const props = defineProps<{
+    price: number | undefined;
+}>();
 
 </script>
 

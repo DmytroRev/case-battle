@@ -2,7 +2,7 @@
     <div class="case-page">
         <PageTitle :case-page-subtitle="caseData?.casePageSubtitle" :title="caseData?.title" :slug="caseData?.slug" />
         <CasePreview :case-preview-box="caseData?.box" :case-preview-logo="caseData?.logo" />
-        <div v-if="false">
+        <!-- <div>
             <h1>{{ caseData?.title }}</h1>
             <div class="case-roller">
                 <div class="items" :class="{ animate: isRolling }" :style="{ transform: `translateX(${offset}px)` }">
@@ -22,37 +22,43 @@
                 <p>{{ result.title }} — {{ result.price }}</p>
                 <img :src="result.box" :alt="result.title" />
             </div>
-        </div>
+        </div> -->
+        <EnouthCoins v-if="visibleBlock()" :price="caseData?.price" />
+        <OpenCounter v-else  :price="caseData?.price"/>
+        <BasicInput />
     </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 import operationData from "../operation-rubric/operationData.json";
 import PageTitle from "./PageTitle.vue";
 import CasePreview from "./CasePreview.vue";
+import BasicInput from "./BasicInput.vue";
+import EnouthCoins from "../open-counter/EnouthCoins.vue";
+import OpenCounter from "../open-counter/OpenCounter.vue";
 
 const route = useRoute();
 const slug = route.params.slug as string;
 
-// Найти кейс по slug
+const offset = ref(0);
+
+const result = ref<any>(null);
+
+const isRolling = ref(false);
+
+const getCoins = computed(() => {
+    return localStorage.getItem('coins');
+});
+
+
 const caseData = operationData.items.find(item => item.slug === slug);
 
-
-// Лента с предметами (повторяем, чтобы "длинная")
 const rollerItems = Array(50)
     .fill(null)
     .map(() => caseData);
 
-// смещение ленты
-const offset = ref(0);
-
-// результат
-const result = ref<any>(null);
-
-// флаг анимации
-const isRolling = ref(false);
 
 const startRoll = () => {
     result.value = null;
@@ -76,6 +82,13 @@ const startRoll = () => {
 const instantRoll = () => {
     result.value = caseData;
 };
+
+const visibleBlock = () => {
+  const coins = Number(getCoins.value ?? 0); 
+  const price = caseData?.price ?? 0;     
+  return coins <= price;
+};
+
 </script>
 
 <style lang="scss">
