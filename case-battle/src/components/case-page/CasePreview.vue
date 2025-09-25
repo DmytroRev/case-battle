@@ -42,6 +42,7 @@ const props = defineProps<{
         outline: none;
         width: 350px;
         height: 350px;
+        pointer-events: none;
     }
 
     &__circle {

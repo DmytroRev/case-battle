@@ -11,7 +11,7 @@ const onWin = () => {
 <template>
   <div>
     <p>Ваш баланс: {{ userStore.coins }}</p>
-    <button @click="onWin">Выиграть 100 монет</button>
+    <button @click="onWin">+100 монет</button>
     <button @click="userStore.resetCoins">Сбросить</button>
   </div>
 </template>
