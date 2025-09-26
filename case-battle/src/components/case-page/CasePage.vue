@@ -6,6 +6,8 @@
         <EnouthCoins v-if="visibleBlock()" :price="caseData?.price" />
         <OpenCounter v-else :price="caseData?.price" :start-roll="startRoll" :instant-roll="instantRoll"
             :is-rolling="isRolling" />
+        <CaseContents :case-data="caseData" />
+        <CaseList :case-data="caseData?.caseWrapperCollection" />
         <BasicInput />
     </div>
 </template>
@@ -20,6 +22,8 @@ import BasicInput from "./BasicInput.vue";
 import EnouthCoins from "../open-counter/EnouthCoins.vue";
 import OpenCounter from "../open-counter/OpenCounter.vue";
 import CaseRoller from "./CaseRoller.vue";
+import CaseContents from "./CaseContents.vue";
+import CaseList from "./CaseList.vue";
 
 const route = useRoute();
 const slug = route.params.slug as string;

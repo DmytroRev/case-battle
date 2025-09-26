@@ -3,8 +3,10 @@
     <div class="open-counter__header">
       <div class="open-counter__title">Открыть</div>
       <div class="open-counter__list">
-        <div v-for="count in maxOpens" :key="count" class="open-counter__value" :class="{ active: selected === count }"
-          @click="selected = count">
+        <div v-for="count in maxOpens" :key="count" class="open-counter__value" :class="{
+          active: selected === count,
+          disable: props.isRolling
+        }" @click="selected = count">
           {{ count }}
         </div>
       </div>
@@ -97,6 +99,11 @@ const totalPrice = computed(() => {
     border: 2px solid;
     border-image-source: linear-gradient(44deg, #f6a158 0%, #d92b1e 100%);
     border-image-slice: 1;
+  }
+
+  .disable {
+    pointer-events: none;
+    opacity: 0.5;
   }
 
   &__footer {

@@ -1,12 +1,14 @@
 <script setup lang="ts">
-// import OperationList from './components/operation-rubric/OperationList.vue';
+import Header from './components/header/Header.vue';
 
 </script>
 
 <template>
-  <div class="app-wrapper">
-    <!-- <OperationList /> -->
-    <router-view />
+  <div>
+    <Header />
+    <div class="app-wrapper">
+      <router-view />
+    </div>
   </div>
 </template>
 
