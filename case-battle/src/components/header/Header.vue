@@ -15,6 +15,9 @@ const redirectUrl = () => {
 
 <style scoped lang="scss">
 .header {
+    padding: 0 15px;
+    margin: 15px auto;
+
     &__title {
         text-transform: uppercase;
         font-size: 34px;
@@ -27,6 +30,11 @@ const redirectUrl = () => {
         max-width: 215px;
         cursor: pointer;
         line-height: 25px;
+
+        // @include media('xs') {
+        //     font-size: 111px;
+        //     max-width: 180px;
+        // }
 
         img {
             width: 30px;

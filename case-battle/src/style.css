@@ -1,11 +1,9 @@
-@import url('https://fonts.googeapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -27,7 +25,10 @@ h6 {
 body {
   position: relative;
   height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #171c25 !important;
+  
 
   &::before {
     content: '';
@@ -38,4 +39,12 @@ body {
     height: 100%;
     background: url('/src/assets/image/bg-main.png') no-repeat top/cover;
   }
+}
+
+img {
+  width: 100%;
+}
+
+div {
+  box-sizing: border-box;
 }

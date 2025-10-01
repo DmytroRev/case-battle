@@ -1,33 +1,28 @@
 <template>
     <div class="operation-item" @click="goToCase">
-        <div class="operation-item__title-block">
-            <h3>{{ props.operation.title }}</h3>
-            <h4>{{ props.operation.subtitle }}</h4>
-        </div>
-        <div class="operation-item__case-block">
-            <img class="operation-item__box" :src="props.operation.box" alt="box">
-            <img class="operation-item__logo" :src="props.operation.logo" alt="logo">
-        </div>
-        <div class="operation-item__price-wrapper">
-            <div class="operation-item__price">
-                <span>{{ props.operation.price }}</span>
+        <div class="operation-item__hover">
+            <div class="operation-item__title-block">
+                <h3>{{ props.operation.title }}</h3>
+                <h4>{{ props.operation.subtitle }}</h4>
+            </div>
+            <div class="operation-item__case-block">
+                <img class="operation-item__box" :src="props.operation.box" alt="box">
+                <img class="operation-item__logo" :src="props.operation.logo" alt="logo">
+            </div>
+            <div class="operation-item__price-wrapper">
+                <div class="operation-item__price">
+                    <span>{{ props.operation.price }}</span>
+                </div>
             </div>
         </div>
+
     </div>
 </template>
 
 <script lang="ts" setup>
 import { useRouter } from 'vue-router';
+import type { OperationItem } from "../../types/types";
 
-interface OperationItem {
-    id: number;
-    slug: string;
-    title: string;
-    subtitle: string;
-    price: string;
-    box: string;
-    logo: string;
-}
 
 const props = defineProps<{
     operation: OperationItem;
@@ -41,10 +36,61 @@ const goToCase = () => {
 </script>
 
 <style scoped lang="scss">
+@keyframes border-angle-rotate {
+    from {
+        --border-angle: 0deg;
+    }
+
+    to {
+        --border-angle: 360deg;
+    }
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
 .operation-item {
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 2px;
     transition: all 0.3s ease;
+    width: 100%;
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid transparent;
+    border-image-slice: 1;
+    border-image-source: none;
+    transition: all .4s ease;
+
+
+
+    @include media(md, '>') {
+        max-width: 225px;
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .62);
+        animation: border-angle-rotate 2s linear infinite;
+        border-image-source: linear-gradient(var(--border-angle), transparent, transparent, #ff6a00);
+        border-width: 2px;
+
+        .operation-item__logo {
+            transform: translateY(-10px);
+        }
+    }
+
+    &__hover {
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+    }
 
     &__title-block {
         &>h3 {
@@ -89,14 +135,6 @@ const goToCase = () => {
         display: block;
         padding: 2px 7px;
         text-align: center;
-    }
-
-    &:hover {
-        background-color: rgba(0, 0, 0, .62);
-
-        .operation-item__logo {
-            transform: translateY(-10px);
-        }
     }
 }
 </style>

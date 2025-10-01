@@ -2,7 +2,7 @@
     <div class="operation-list">
         <h2 class="operation-list__title" :style="{ backgroundImage: `url(${data.titleBg})` }">{{ data.title }}</h2>
         <div class="operation-list__item-wrapper">
-            <OperationItem v-for="(operation, index) in data.items" :key="index" :operation="operation" />
+            <OperationItem class="operation-list__item" v-for="(operation, index) in data.items" :key="index" :operation="operation" />
         </div>
     </div>
 </template>
@@ -10,22 +10,11 @@
 <script lang="ts" setup>
 import operationData from './operationData.json';
 import OperationItem from './OperationItem.vue';
+import type { OperationDataList } from "../../types/types";
 
-interface OperationItem {
-    title: string;
-    subtitle: string;
-    price: string;
-    box: string;
-    logo: string;
-}
 
-interface OperationData {
-    title: string;
-    titleBg: string;
-    items: OperationItem[];
-}
 
-const data: OperationData = operationData;
+const data: OperationDataList = operationData;
 </script>
 
 <style scoped lang="scss">
@@ -50,7 +39,16 @@ const data: OperationData = operationData;
     }
 
     &__item-wrapper {
+        margin: 0 auto;
         display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 10px;
+        row-gap: 15px;
+
+        @include media(md, '>') {
+            justify-content: center;
+        }
     }
 }
 </style>
