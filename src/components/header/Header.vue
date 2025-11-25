@@ -4,8 +4,6 @@
             <div>Case<span><img src="../../assets/image/grenade.png" alt="grenade"></span>Battle</div>
             <div class="header__subtitle">У нас выигрывают</div>
         </div>
-
-        
     </div>
 </template>
 

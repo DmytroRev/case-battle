@@ -76,7 +76,7 @@ const goToCase = () => {
         background-color: rgba(0, 0, 0, .62);
         animation: border-angle-rotate 2s linear infinite;
         border-image-source: linear-gradient(var(--border-angle), transparent, transparent, #ff6a00);
-        border-width: 1px;
+        border-width: 2px;
 
         .operation-item__logo {
             transform: translateY(-10px);
@@ -128,7 +128,6 @@ const goToCase = () => {
         background-image: -webkit-linear-gradient(left, #ee9f58, #d12a1e);
         background-image: linear-gradient(to right, #ee9f58, #d12a1e);
         padding: 1px;
-
     }
 
     .operation-item__price {
