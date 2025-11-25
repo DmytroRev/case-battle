@@ -1,0 +1,154 @@
+<template>
+  <div class="open-counter">
+    <div class="open-counter__header">
+      <div class="open-counter__title">Открыть</div>
+      <div class="open-counter__list">
+        <div v-for="count in maxOpens" :key="count" class="open-counter__value" :class="{
+          active: selected === count,
+          disable: props.isRolling
+        }" @click="selected = count">
+          {{ count }}
+        </div>
+      </div>
+      <div>раз</div>
+    </div>
+    <div class="open-counter__footer">
+      <button class="open-counter__btn" :disabled="props.isRolling" @click="startRoll"><img class="open-counter__icon"
+          src="../../assets/image/box.png" alt="box">Открыть за {{ totalPrice }} $</button>
+      <button class="open-counter__btn" :disabled="props.isRolling" @click="instantRoll"><img class="open-counter__icon"
+          src="../../assets/image/lightning.png" alt="lightning">Быстро за {{ totalPrice }} $</button>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { computed, ref } from 'vue';
+import { useUserStore } from '../../module/useUserStore';
+
+const props = defineProps<{
+  price: number | undefined;
+  startRoll: () => void;
+  instantRoll: () => void;
+  isRolling: boolean;
+}>();
+
+const userStore = useUserStore();
+const selected = ref(1);
+
+const maxOpens = computed(() => {
+  if (!props.price) return 0;
+  const possibleOpens = Math.floor(userStore.coins / props.price);
+  return possibleOpens <= 5 ? possibleOpens : 5;
+});
+
+const totalPrice = computed(() => {
+  if (!props.price) return 0;
+  return props.price * selected.value;
+});
+</script>
+
+<style scoped lang="scss">
+.open-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  flex-direction: column;
+
+  &__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #9c9c9c;
+  }
+
+  &__list {
+    display: flex;
+    margin: 3px 10px;
+    padding: 0;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    gap: 2px;
+    vertical-align: middle;
+  }
+
+  &__value {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+    line-height: 29px;
+    border: rgba(0, 0, 0, 0) 1px solid;
+    transition: all ease-in .2s;
+
+    &:hover {
+      font-weight: 700;
+      background-color: #201112;
+    }
+
+  }
+
+  .active {
+    background-color: rgba(32, 17, 18, .91);
+    border: 2px solid;
+    border-image-source: linear-gradient(44deg, #f6a158 0%, #d92b1e 100%);
+    border-image-slice: 1;
+  }
+
+  .disable {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  &__footer {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 5px;
+  }
+
+  &__btn {
+    height: 45px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: -webkit-linear-gradient(90deg, #261214, #181412);
+    background: linear-gradient(90deg, #261214, #181412);
+    border: 2px solid;
+    border-image-source: linear-gradient(90deg, #e6964c 0%, #e6964c 100%);
+    border-image-slice: 1;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+    padding: 0 14px;
+    cursor: pointer;
+
+    transition: all .3s ease;
+
+    &:hover {
+      background: linear-gradient(90deg, #571318, #143919);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &__icon {
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+
+}
+</style>
