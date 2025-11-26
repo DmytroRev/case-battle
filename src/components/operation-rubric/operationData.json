@@ -8,14 +8,14 @@
       "title": "Сломанный Клык",
       "subtitle": "57 предметов",
       "price": 129,
-      "box": "operation/box/fang-box.png",
-      "logo": "operation/logo/fang-logo.png",
+      "box": "../../../public/operation/box/fang-box.png",
+      "logo": "../../../public/operation/logo/fang-logo.png",
       "casePageSubtitle": "кейс Операции",
       "caseWrapperTitle": "Содержимое кейса",
       "caseWrapperCollection": [
         {
           "title": "Коллекция «Havoc»",
-          "logo": "operation/collections/havoc.png",
+          "logo": "../../../public/operation/collections/havoc.png",
           "quantity": "19 предметов",
           "collection": "havoc",
           "weapons": [
@@ -25,7 +25,7 @@
               "price": 32,
               "collection": "havoc",
               "rarity": "white",
-              "img": "operation/broken-fang/predator.png"
+              "img": "../../../public/../../../public/operation/broken-fang/predator.png"
             },
             {
               "title": "Tec-9",
@@ -33,7 +33,7 @@
               "price": 34,
               "collection": "havoc",
               "rarity": "white",
-              "img": "operation/broken-fang/phoenix-chalk.png"
+              "img": "../../../public/operation/broken-fang/phoenix-chalk.png"
             },
             {
               "title": "Dual Berettas",
@@ -41,7 +41,7 @@
               "price": 45,
               "collection": "havoc",
               "rarity": "white",
-              "img": "operation/broken-fang/robbery.png"
+              "img": "../../../public/operation/broken-fang/robbery.png"
             },
             {
               "title": "Sawed-Off",
@@ -49,7 +49,7 @@
               "price": 35,
               "collection": "havoc",
               "rarity": "white",
-              "img": "operation/broken-fang/clay-ambush.png"
+              "img": "../../../public/operation/broken-fang/clay-ambush.png"
             },
             {
               "title": "ПП-19 «Бизон»",
@@ -57,7 +57,7 @@
               "price": 28,
               "collection": "havoc",
               "rarity": "white",
-              "img": "operation/broken-fang/rattlesnake-death.png"
+              "img": "../../../public/operation/broken-fang/rattlesnake-death.png"
             },
             {
               "title": "Nova",
@@ -65,7 +65,7 @@
               "price": 235,
               "collection": "havoc",
               "rarity": "blue",
-              "img": "operation/broken-fang/dust-cover.png"
+              "img": "../../../public/operation/broken-fang/dust-cover.png"
             },
             {
               "title": "MP7",
@@ -73,7 +73,7 @@
               "price": 216,
               "collection": "havoc",
               "rarity": "blue",
-              "img": "operation/broken-fang/vault-robbery.png"
+              "img": "../../../public/operation/broken-fang/vault-robbery.png"
             },
             {
               "title": "UMP-45",
@@ -81,7 +81,7 @@
               "price": 238,
               "collection": "havoc",
               "rarity": "blue",
-              "img": "operation/broken-fang/goose-feet.png"
+              "img": "../../../public/operation/broken-fang/goose-feet.png"
             },
             {
               "title": "Револьвер R8",
@@ -89,7 +89,7 @@
               "price": 272,
               "collection": "havoc",
               "rarity": "blue",
-              "img": "operation/broken-fang/phoenix-marker.png"
+              "img": "../../../public/operation/broken-fang/phoenix-marker.png"
             },
             {
               "title": "P250",
@@ -97,7 +97,7 @@
               "price": 1182,
               "collection": "havoc",
               "rarity": "blue",
-              "img": "operation/broken-fang/bengal-tiger.png"
+              "img": "../../../public/operation/broken-fang/bengal-tiger.png"
             },
             {
               "title": "Desert Eagle",
@@ -105,7 +105,7 @@
               "price": 1362,
               "collection": "havoc",
               "rarity": "blue",
-              "img": "operation/broken-fang/night-robbery.png"
+              "img": "../../../public/operation/broken-fang/night-robbery.png"
             },
             {
               "title": "Negev",
@@ -113,7 +113,7 @@
               "price": 1169,
               "collection": "havoc",
               "rarity": "blue",
-              "img": "operation/broken-fang/phoenix-stencil.png"
+              "img": "../../../public/operation/broken-fang/phoenix-stencil.png"
             },
             {
               "title": "P90",
@@ -121,7 +121,7 @@
               "price": 3900,
               "collection": "havoc",
               "rarity": "blue",
-              "img": "operation/broken-fang/tiger-pit.png"
+              "img": "../../../public/operation/broken-fang/tiger-pit.png"
             },
             {
               "title": "SG 553",
@@ -129,7 +129,7 @@
               "price": 6378,
               "collection": "havoc",
               "rarity": "purple",
-              "img": "operation/broken-fang/hypnosis.png"
+              "img": "../../../public/operation/broken-fang/hypnosis.png"
             },
             {
               "title": "Glock-18",
@@ -137,7 +137,7 @@
               "price": 6085,
               "collection": "havoc",
               "rarity": "purple",
-              "img": "operation/broken-fang/franklin.png"
+              "img": "../../../public/operation/broken-fang/franklin.png"
             },
             {
               "title": "Galil AR",
@@ -145,7 +145,7 @@
               "price": 5200,
               "collection": "havoc",
               "rarity": "purple",
-              "img": "operation/broken-fang/negative-of-phoenix.png"
+              "img": "../../../public/operation/broken-fang/negative-of-phoenix.png"
             },
             {
               "title": "AWP",
@@ -153,7 +153,7 @@
               "price": 17000,
               "collection": "havoc",
               "rarity": "pink",
-              "img": "operation/broken-fang/silk-tiger.png"
+              "img": "../../../public/operation/broken-fang/silk-tiger.png"
             },
             {
               "title": "MAC-10",
@@ -161,7 +161,7 @@
               "price": 12270,
               "collection": "havoc",
               "rarity": "pink",
-              "img": "operation/broken-fang/snakes-on-a-frying-pan.png"
+              "img": "../../../public/operation/broken-fang/snakes-on-a-frying-pan.png"
             },
             {
               "title": "AK-47",
@@ -169,19 +169,19 @@
               "price": 42097,
               "collection": "havoc",
               "rarity": "red",
-              "img": "operation/broken-fang/x-ray.png"
+              "img": "../../../public/operation/broken-fang/x-ray.png"
             }
           ]
         },
         {
           "title": "Коллекция «Controll»",
-          "logo": "operation/collections/control.png",
+          "logo": "../../../public/operation/collections/control.png",
           "quantity": "19 предметов",
           "collection": "control"
         },
         {
           "title": "Коллекция «Ancient»",
-          "logo": "operation/collections/ancient.png",
+          "logo": "../../../public/operation/collections/ancient.png",
           "quantity": "19 предметов",
           "collection": "ancient"
         }
@@ -193,29 +193,29 @@
       "title": "Прорыв",
       "subtitle": "58 предметов",
       "price": 95,
-      "box": "operation/box/breakthrough-box.png",
-      "logo": "operation/logo/breakthrough-logo.png",
+      "box": "../../../public/operation/box/breakthrough-box.png",
+      "logo": "../../../public/operation/logo/breakthrough-logo.png",
       "casePageSubtitle": "кейс Операции",
       "caseWrapperTitle": "Содержимое кейса",
       "caseWrapperCollection": [
         {
           "title": "Коллекция «Baggage»",
-          "logo": "operation/collections/baggage.png",
+          "logo": "../../../public/operation/collections/baggage.png",
           "quantity": "15 предметов"
         },
         {
           "title": "Коллекция «Cobblestone»",
-          "logo": "operation/collections/cobblestone.png",
+          "logo": "../../../public/operation/collections/cobblestone.png",
           "quantity": "15 предметов"
         },
         {
           "title": "Коллекция «Overpass»",
-          "logo": "operation/collections/overpass.png",
+          "logo": "../../../public/operation/collections/overpass.png",
           "quantity": "15 предметов"
         },
         {
           "title": "Коллекция «Cashe»",
-          "logo": "operation/collections/cashe.png",
+          "logo": "../../../public/operation/collections/cashe.png",
           "quantity": "13 предметов"
         }
       ]
@@ -226,29 +226,29 @@
       "title": "Хищные воды",
       "subtitle": "73 предмета",
       "price": 119,
-      "box": "operation/box/predatory-waters-box.png",
-      "logo": "operation/logo/predatory-waters-logo.png",
+      "box": "../../../public/operation/box/predatory-waters-box.png",
+      "logo": "../../../public/operation/logo/predatory-waters-logo.png",
       "casePageSubtitle": "кейс Операции",
       "caseWrapperTitle": "Содержимое кейса",
       "caseWrapperCollection": [
         {
           "title": "Коллекция «Train 2021»",
-          "logo": "operation/collections/train.png",
+          "logo": "../../../public/operation/collections/train.png",
           "quantity": "17 предметов"
         },
         {
           "title": "Коллекция «Mirage 2021»",
-          "logo": "operation/collections/mirage.png",
+          "logo": "../../../public/operation/collections/mirage.png",
           "quantity": "18 предметов"
         },
         {
           "title": "Коллекция «Dust 2 2021»",
-          "logo": "operation/collections/dust.png",
+          "logo": "../../../public/operation/collections/dust.png",
           "quantity": "19 предметов"
         },
         {
           "title": "Коллекция «Vertigo 2021»",
-          "logo": "operation/collections/vertigo.png",
+          "logo": "../../../public/operation/collections/vertigo.png",
           "quantity": "19 предметов"
         }
       ]
@@ -259,24 +259,24 @@
       "title": "Расколотая сеть",
       "subtitle": "54 предмета",
       "price": 229,
-      "box": "operation/box/split-network-box.png",
-      "logo": "operation/logo/split-network-logo.png",
+      "box": "../../../public/operation/box/split-network-box.png",
+      "logo": "../../../public/operation/logo/split-network-logo.png",
       "casePageSubtitle": "кейс Операции",
       "caseWrapperTitle": "Содержимое кейса",
       "caseWrapperCollection": [
         {
           "title": "Коллекция «Norse»",
-          "logo": "operation/collections/norse.png",
+          "logo": "../../../public/operation/collections/norse.png",
           "quantity": "18 предметов"
         },
         {
           "title": "Коллекция «Canals»",
-          "logo": "operation/collections/canals.png",
+          "logo": "../../../public/operation/collections/canals.png",
           "quantity": "18 предметов"
         },
         {
           "title": "Коллекция «St. Mars»",
-          "logo": "operation/collections/st-mars.png",
+          "logo": "../../../public/operation/collections/st-mars.png",
           "quantity": "18 предметов"
         }
       ]
@@ -287,24 +287,24 @@
       "title": "Бладхаунд",
       "subtitle": "46 предметов",
       "price": 399,
-      "box": "operation/box/bloodhound-box.png",
-      "logo": "operation/logo/bloodhound-logo.png",
+      "box": "../../../public/operation/box/bloodhound-box.png",
+      "logo": "../../../public/operation/logo/bloodhound-logo.png",
       "casePageSubtitle": "кейс Операции",
       "caseWrapperTitle": "Содержимое кейса",
       "caseWrapperCollection": [
         {
           "title": "Gods & Monsters",
-          "logo": "operation/collections/gods-and-monsters.png",
+          "logo": "../../../public/operation/collections/gods-and-monsters.png",
           "quantity": "14 предметов"
         },
         {
           "title": "Коллекция «Rising Sun»",
-          "logo": "operation/collections/rising-sun.png",
+          "logo": "../../../public/operation/collections/rising-sun.png",
           "quantity": "16 предметов"
         },
         {
           "title": "Коллекция «Chop Shop»",
-          "logo": "operation/collections/chop-shop.png",
+          "logo": "../../../public/operation/collections/chop-shop.png",
           "quantity": "16 предметов"
         }
       ]

@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header__title" @click="redirectUrl">
-      <div>
+      <div class="header__title-text">
         Case
         <span><img src="../../../public/grenade.png" alt="grenade" /></span>
         Battle
@@ -45,6 +45,13 @@ const redirectUrl = () => {
       height: 30px;
       object-fit: contain;
     }
+  }
+
+  &__title-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
   }
 
   &__subtitle {
