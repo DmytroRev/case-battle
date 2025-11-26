@@ -3,20 +3,30 @@
     <div class="open-counter__header">
       <div class="open-counter__title">Открыть</div>
       <div class="open-counter__list">
-        <div v-for="count in maxOpens" :key="count" class="open-counter__value" :class="{
-          active: selected === count,
-          disable: props.isRolling
-        }" @click="selected = count">
+        <div
+          v-for="count in maxOpens"
+          :key="count"
+          class="open-counter__value"
+          :class="{
+            active: selected === count,
+            disable: props.isRolling,
+          }"
+          @click="selected = count"
+        >
           {{ count }}
         </div>
       </div>
       <div>раз</div>
     </div>
     <div class="open-counter__footer">
-      <button class="open-counter__btn" :disabled="props.isRolling" @click="startRoll"><img class="open-counter__icon"
-          src="../../assets/image/box.png" alt="box">Открыть за {{ totalPrice }} $</button>
-      <button class="open-counter__btn" :disabled="props.isRolling" @click="instantRoll"><img class="open-counter__icon"
-          src="../../assets/image/lightning.png" alt="lightning">Быстро за {{ totalPrice }} $</button>
+      <button class="open-counter__btn" :disabled="props.isRolling" @click="startRoll">
+        <img class="open-counter__icon" src="../../../public/box.png" alt="box" />
+        Открыть за {{ totalPrice }} $
+      </button>
+      <button class="open-counter__btn" :disabled="props.isRolling" @click="instantRoll">
+        <img class="open-counter__icon" src="../../../public/lightning.png" alt="lightning" />
+        Быстро за {{ totalPrice }} $
+      </button>
     </div>
   </div>
 </template>
@@ -85,17 +95,16 @@ const totalPrice = computed(() => {
     cursor: pointer;
     line-height: 29px;
     border: rgba(0, 0, 0, 0) 1px solid;
-    transition: all ease-in .2s;
+    transition: all ease-in 0.2s;
 
     &:hover {
       font-weight: 700;
       background-color: #201112;
     }
-
   }
 
   .active {
-    background-color: rgba(32, 17, 18, .91);
+    background-color: rgba(32, 17, 18, 0.91);
     border: 2px solid;
     border-image-source: linear-gradient(44deg, #f6a158 0%, #d92b1e 100%);
     border-image-slice: 1;
@@ -127,11 +136,11 @@ const totalPrice = computed(() => {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .9em;
+    font-size: 0.9em;
     padding: 0 14px;
     cursor: pointer;
 
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
     &:hover {
       background: linear-gradient(90deg, #571318, #143919);
@@ -149,6 +158,5 @@ const totalPrice = computed(() => {
     object-fit: contain;
     margin-right: 10px;
   }
-
 }
 </style>

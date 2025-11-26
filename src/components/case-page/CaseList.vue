@@ -11,7 +11,7 @@
         'case-list__item--red': item.rarity === 'red',
       }"
     >
-      <img class="case-list__bg-item" src="../../assets/image/bg-item.jpg" alt="bg-item" />
+      <img class="case-list__bg-item" src="../../../public/bg-item.jpg" alt="bg-item" />
       <img class="case-list__img" :src="item.img" :alt="item.title" />
       <img class="case-list__collection" :src="logo" :alt="item.collection" />
       <div class="case-list__price">{{ item.price }} $</div>
